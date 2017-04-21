@@ -1,0 +1,39 @@
+{
+	"name": "___PACKAGENAME___",
+	"description" : "___DESCRIPTION___",
+	"author": "___FULLUSERNAME___",
+	"authorEmail" : "___EMAIL___",
+	"homepage": "___HOMEPAGE___",
+	"identifier" : "___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___",
+	"compatibleVersion": "___SKETCHVERSION___",
+	"build": 1,
+	"version": "1.0.0",
+
+	"commands": [
+		{
+			"name" : "Run",
+			"identifier" : "run",
+			"shortcut" : "",
+			"script" : "script.cocoscript",
+			"handler" : "onRun"
+		},
+		{
+			"script" : "script.cocoscript",
+			"handlers" : {
+				"actions" : {
+					"Startup" : "onStartup",
+					"OpenDocument":"onOpenDocument",
+					"SelectionChanged.finish" : "onSelectionChanged"
+				}
+			}
+		}
+	],
+	"menu": {
+		"isRoot" : false,
+		"shortcut" : "",
+		"title": "___PACKAGENAME___",
+		"items": [
+			"run"
+		]
+	}
+}
