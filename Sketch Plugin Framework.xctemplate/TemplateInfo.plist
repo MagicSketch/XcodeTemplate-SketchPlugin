@@ -122,6 +122,11 @@ cp ${SRCROOT}/${TARGET_NAME}/${TARGET_NAME}.js ${TARGET_BUILD_DIR}/${FULL_PRODUC
 	</array>
 	<key>Definitions</key>
 	<dict>
+		<key>___PACKAGENAMEASIDENTIFIER___.m</key>
+		<dict>
+			<key>Path</key>
+			<string>___PACKAGENAMEASIDENTIFIER___.m</string>
+		</dict>
 		<key>___PACKAGENAMEASIDENTIFIER___.js</key>
 		<dict>
 			<key>Path</key>
@@ -142,6 +147,7 @@ cp ${SRCROOT}/${TARGET_NAME}/${TARGET_NAME}.js ${TARGET_BUILD_DIR}/${FULL_PRODUC
 	<key>Nodes</key>
 	<array>
 		<string>___PACKAGENAMEASIDENTIFIER___.js</string>
+		<string>___PACKAGENAMEASIDENTIFIER___.m</string>
 	</array>
 </dict>
 </plist>

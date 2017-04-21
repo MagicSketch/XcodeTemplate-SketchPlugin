@@ -1,3 +1,17 @@
+/*
+// To load this framework, replace the onRun method in your script.cocoscript
+
+@import '___PACKAGENAMEASIDENTIFIER___.framework/___PACKAGENAMEASIDENTIFIER___.js'
+
+var onRun = function(context) {
+   var obj = ___PACKAGENAMEASIDENTIFIER___.alloc().init()
+   var uppercase = obj.uppercaseString("hello world")
+
+   log(uppercase);
+   context.document.showMessage(uppercase);
+}
+*/
+
 var ___PACKAGENAMEASIDENTIFIER____FrameworkPath = ___PACKAGENAMEASIDENTIFIER____FrameworkPath || COScript.currentCOScript().env().scriptURL.path().stringByDeletingLastPathComponent();
 var ___PACKAGENAMEASIDENTIFIER____Log = ___PACKAGENAMEASIDENTIFIER____Log || log;
 (function() {
