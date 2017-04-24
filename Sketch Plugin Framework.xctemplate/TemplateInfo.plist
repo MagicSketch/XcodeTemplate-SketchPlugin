@@ -5,7 +5,7 @@
 	<key>Kind</key>
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Identifier</key>
-	<string>com.apple.dt.unit.cocoaFramework</string>
+	<string>io.magicsketch.xcode.framework</string>
 	<key>Ancestors</key>
 	<array>
 		<string>com.apple.dt.unit.frameworkBase</string>
