@@ -4,6 +4,10 @@
 git clone git@github.com:MagicSketch/XcodeTemplate-SketchPlugin.git /Library/Developer/Xcode/Templates/Sketch\ Plugin
 ```
 
+## Read our Introductory Blog Post
+
+https://blog.magicsketch.io/sketch-plugin-xcode-template-c8236a6f7fff
+
 ## Available Templates
 
 - Sketch Plugin Bundle (generates a .sketchplugin)
