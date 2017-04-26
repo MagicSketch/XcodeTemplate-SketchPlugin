@@ -68,7 +68,7 @@
 
     // Add cells
     for (NSUInteger i = 0; i < count; i++) {
-        [items insertObject:[self.datasource ___PACKAGENAMEASIDENTIFIER___SketchPanel:self itemForRowAtIndex:i] atIndex:1];
+        [items addObject:[self.datasource ___PACKAGENAMEASIDENTIFIER___SketchPanel:self itemForRowAtIndex:i]];
     }
 
     // Recycle cells
