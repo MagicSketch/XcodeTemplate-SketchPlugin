@@ -18,7 +18,7 @@
 */
 
 var onStartup = function(context) {
-  var ___PACKAGENAMEASIDENTIFIER____FrameworkPath = ___PACKAGENAMEASIDENTIFIER____FrameworkPath || COScript.currentCOScript().env().scriptURL.path().stringByDeletingLastPathComponent();
+  var ___PACKAGENAMEASIDENTIFIER____FrameworkPath = ___PACKAGENAMEASIDENTIFIER____FrameworkPath || COScript.currentCOScript().env().scriptURL.path().stringByDeletingLastPathComponent().stringByDeletingLastPathComponent();
   var ___PACKAGENAMEASIDENTIFIER____Log = ___PACKAGENAMEASIDENTIFIER____Log || log;
   (function() {
     var mocha = Mocha.sharedRuntime();
