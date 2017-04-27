@@ -58,7 +58,11 @@
 
 - (void)reloadData {
     NSMutableArray *sectionViewControllers = [[_stackView sectionViewControllers] mutableCopy];
-    [sectionViewControllers addObject:self];
+
+    // Make sure don't add two instance of the same controller
+    if ([sectionViewControllers indexOfObject:self] == NSNotFound) {
+        [sectionViewControllers addObject:self];
+    }
 
     NSUInteger count = [self.datasource numberOfRowsFor___PACKAGENAMEASIDENTIFIER___SketchPanel:self];
     NSMutableArray *items = [NSMutableArray array];
