@@ -25,12 +25,23 @@
 
 + (instancetype)onSelectionChanged:(id)context;
 - (void)onSelectionChange:(NSArray *)selection;
++ (void)setSharedCommand:(id)command;
 
 @end
 
 
 
 @implementation ___PACKAGENAMEASIDENTIFIER___
+
+static id _command;
+
++ (void)setSharedCommand:(id)command {
+    _command = command;
+}
+
++ (id)sharedCommand {
+    return _command;
+}
 
 + (instancetype)onSelectionChanged:(id)context {
 
@@ -40,6 +51,10 @@
     if ( ! [document isKindOfClass:NSClassFromString(@"MSDocument")]) {
         document = nil;  // be safe
         return nil;
+    }
+
+    if ( ! [self sharedCommand]) {
+        [self setSharedCommand:[context valueForKeyPath:@"command"]]; // MSPluginCommand
     }
 
     NSString *key = [NSString stringWithFormat:@"%@-___PACKAGENAMEASIDENTIFIER___", [document description]];
