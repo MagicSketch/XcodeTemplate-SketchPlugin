@@ -12,7 +12,6 @@
 @interface ___PACKAGENAMEASIDENTIFIER___SketchPanel ()
 
 @property (nonatomic, copy) NSArray *items;
-@property (nonatomic, weak) id <___PACKAGENAMEASIDENTIFIER___MSInspectorStackView> stackView;
 @property (nonatomic, strong) NSMutableDictionary *recycler;
 
 @end

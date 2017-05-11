@@ -28,8 +28,7 @@
 - (instancetype)initWithDocument:(id <___PACKAGENAMEASIDENTIFIER___MSDocument>)document {
     if (self = [super init]) {
         _document = document;
-        _stackView = [(NSObject *)_document valueForKeyPath:@"inspectorController.normalInspector.stackView"];
-        _panel = [[___PACKAGENAMEASIDENTIFIER___SketchPanel alloc] initWithStackView:_stackView];
+        _panel = [[___PACKAGENAMEASIDENTIFIER___SketchPanel alloc] initWithStackView:nil];
         _panel.datasource = self;
     }
     return self;
@@ -37,6 +36,8 @@
 
 - (void)selectionDidChange:(NSArray *)selection {
     self.selection = [selection valueForKey:@"layers"];         // To get NSArray from MSLayersArray
+
+    self.panel.stackView = [(NSObject *)_document valueForKeyPath:@"inspectorController.currentInspector.stackView"];
     [self.panel reloadData];
 }
 

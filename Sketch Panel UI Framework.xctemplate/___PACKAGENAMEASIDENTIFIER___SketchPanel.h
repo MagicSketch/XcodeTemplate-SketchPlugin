@@ -15,6 +15,7 @@
 @interface ___PACKAGENAMEASIDENTIFIER___SketchPanel : NSObject
 
 @property (nonatomic, strong, readonly) NSArray *views;
+@property (nonatomic, weak) id <___PACKAGENAMEASIDENTIFIER___MSInspectorStackView> stackView;
 @property (nonatomic, weak) id <___PACKAGENAMEASIDENTIFIER___SketchPanelDataSource> datasource;
 
 - (instancetype)initWithStackView:(id <___PACKAGENAMEASIDENTIFIER___MSInspectorStackView>)stackView;
