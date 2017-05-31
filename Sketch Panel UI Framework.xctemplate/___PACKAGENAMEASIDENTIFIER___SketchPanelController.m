@@ -37,7 +37,7 @@
 - (void)selectionDidChange:(NSArray *)selection {
     self.selection = [selection valueForKey:@"layers"];         // To get NSArray from MSLayersArray
 
-    self.panel.stackView = [(NSObject *)_document valueForKeyPath:@"inspectorController.currentInspector.stackView"];
+    self.panel.stackView = [(NSObject *)_document valueForKeyPath:@"inspectorController.currentController.stackView"];
     [self.panel reloadData];
 }
 
