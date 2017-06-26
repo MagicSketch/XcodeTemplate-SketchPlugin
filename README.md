@@ -24,6 +24,13 @@ This will generate necessary files that you needed for your first Sketch plugin 
 
 Make sure you set the executable in the scheme.
 
+```
+Features
+- Auto Generate manifest.json, script.cocoscript
+- Auto Install Plugin to Sketch plugin folder
+- Post Process manifest.json to auto fill PLUGIN_VERSION, PLUGIN_IDENTIFIER, PLUGIN_BUILD
+```
+
 ![](images/set-executable.png)
 
 ## Sketch Plugin Framework (.framework)
