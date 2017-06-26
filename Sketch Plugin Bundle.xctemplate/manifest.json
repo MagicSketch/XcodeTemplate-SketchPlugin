@@ -4,10 +4,10 @@
 	"author": "___FULLUSERNAME___",
 	"authorEmail" : "___EMAIL___",
 	"homepage": "___HOMEPAGE___",
-	"identifier" : "___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___",
-	"compatibleVersion": "___SKETCHVERSION___",
-	"build": 1,
-	"version": "1.0.0",
+	"identifier" : "PLUGIN_IDENTIFIER",
+	"compatibleVersion": 44,
+	"build": PLUGIN_BUILD,
+	"version": "PLUGIN_VERSION",
 
 	"commands": [
 		{
