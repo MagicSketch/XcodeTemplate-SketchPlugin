@@ -25,10 +25,11 @@ This will generate necessary files that you needed for your first Sketch plugin 
 Make sure you set the executable in the scheme.
 
 ```
-Features
+What's Included:
 - Auto Generate manifest.json, script.cocoscript
 - Auto Install Plugin to Sketch plugin folder
 - Post Process manifest.json to auto fill PLUGIN_VERSION, PLUGIN_IDENTIFIER, PLUGIN_BUILD
+- Added Appcast default URL for Sketch 45 auto update feature
 ```
 
 ![](images/set-executable.png)

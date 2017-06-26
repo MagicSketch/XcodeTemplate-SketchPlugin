@@ -8,7 +8,8 @@
 	"compatibleVersion": 44,
 	"build": PLUGIN_BUILD,
 	"version": "PLUGIN_VERSION",
-
+  "appcast": "https://api.sketchpacks.com/v1/plugins/PLUGIN_IDENTIFIER/appcast",
+	
 	"commands": [
 		{
 			"name" : "Run",
